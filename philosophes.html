@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NNIL Projet Inter - Philosophie</title>
+  <link rel="stylesheet" href="main4.css" />
+  <style>
+
+  </style>
+</head>
+
+<body class="dark-theme">
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <img src="imageslogo-nnil.png" alt="Logo NNIL" />
+      </div>
+    </div>
+
+    <div class="navbar-right">
+      <nav>
+        <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="analyse.html">Analyse</a></li>
+        <li><a href="reves.html">Rêves récurrents
+        <li><a href="philosophes.html">Philosophie</a></li>
+        <li><a href="religion.html">Religion</a></li>
+        <li><a href="biblio.html">Bibliographie</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <!-- Soleil visible par défaut -->
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="orange" stroke-width="2" viewBox="0 0 24 24" width="40" height="40">
+          <circle cx="12" cy="12" r="5" fill="orange"/>
+          <g stroke="orange" stroke-linecap="round" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="4"/>
+            <line x1="12" y1="20" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="4" y2="12"/>
+            <line x1="20" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+          </g>
+        </svg>
+
+
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="gold" stroke-width="2" viewBox="0 0 24 24" width="40" height="40" style="display: none;">
+          <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 0012 21a9 9 0 009-8.21z" fill="gold" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="hero">
+    <h1>Que comprend le philosophe là où le rêveur se perd ?</h1>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const iconSun = document.getElementById('icon-sun');
+    const iconMoon = document.getElementById('icon-moon');
+
+    toggleButton.addEventListener('click', () => {
+      if (body.classList.contains('light-theme')) {
+        // Passer au thème sombre
+        body.classList.replace('light-theme', 'dark-theme');
+        iconSun.style.display = 'none';
+        iconMoon.style.display = 'block';
+        toggleButton.setAttribute('aria-label', 'Passer au thème clair');
+      } else {
+        // Passer au thème clair
+        body.classList.replace('dark-theme', 'light-theme');
+        iconSun.style.display = 'block';
+        iconMoon.style.display = 'none';
+        toggleButton.setAttribute('aria-label', 'Passer au thème sombre');
+      }
+    });
+  </script>
+
+<div class="cadre-texte video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q5HB-N-qivA" 
+          title="Vidéo YouTube" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<div class="cadre-texte">
+  <div class="contenu">Le rêve a longtemps fasciné les philosophes, qui y ont vu un moyen d’explorer l’intériorité humaine. Platon considère le rêve comme l’expression des désirs refoulés, qui émergent quand la raison dort : il révèle une part sauvage de l’âme, opposée à la maîtrise de l’état de veille.
+  </div>
+</div>
+
+
+
+<div class="cadre-texte">
+  <div class="contenu">Aristote, quant à lui, adopte une vision plus naturaliste. Pour lui, les rêves proviennent de l’imagination (phantasia) et reflètent nos expériences sensibles, sans origine divine. Cette approche est prolongée par Husserl, qui voit dans le rêve une expérience de conscience à part entière : il permet d’explorer nos mondes intérieurs et de comprendre la manière dont nous construisons la réalité.
+  </div>
+</div>
+
+<div class="cadre-texte">
+  <div class="contenu">Dans une perspective existentielle, Jean-Paul Sartre estime que le rêve n’est pas passif, mais résulte d’une création active de l’imagination. Il exprime nos désirs profonds, nos angoisses, et confronte l’individu à lui-même.
+</div>
+</div>
+
+<div class="cadre-texte">
+  <div class="contenu">Pour Sigmund Freud, les rêves étaient des fenêtres ouvertes sur l’inconscient, révélant des désirs refoulés et des conflits psychiques. Il croyait que les rêves étaient une forme de réalisation des désirs, souvent inacceptables ou inaccessibles dans la vie éveillée, et qu’ils étaient façonnés par les pulsions et les expériences infantiles. Selon sa théorie, les rêves se trouvaient entre les désirs inconscients et leur contenu manifeste était souvent déguisé sous forme de symboles ou d’images pour échapper à la censure de l’esprit conscient. 
+Freud a développé une méthode d’analyse des rêves appelée interprétation des rêves, qui consistait à décoder les symboles et les éléments du rêve pour révéler leur signification cachée. 
+</div>
+</div>
+
+</div>
+<div class="cadre-texte">
+  <div class="contenu">Carl Jung, célèbre psychanalyste et ancien disciple de Freud, a développé une approche originale de l’interprétation des rêves, qui se distingue à plusieurs égards de celle de son mentor. Il a notamment introduit la notion d’archétypes : des symboles universels, hérités de nos ancêtres et présents dans toutes les cultures, qui apparaissent dans nos rêves et influencent notre comportement.
+Jung mettait également en avant l’importance d’unir les opposés à l’intérieur de l’individu — une idée souvent représentée par des images contrastées dans les rêves. Par exemple, rêver d’eau peut symboliser à la fois des émotions profondes et inconscientes, mais aussi des éléments de conscience ou de spiritualité.
+Ainsi, pour Jung, les rêves jouent un rôle essentiel dans le développement personnel : ils agissent comme des guides dans un processus d’intégration des différentes facettes de soi, visant à atteindre un état d’harmonie intérieure.
+</div>
+</div>
+
+<div class="cadre-texte">
+  <div class="contenu">Enfin, certains chercheurs pensent que les rêves pourraient simplement être le produit d’activités neuronales aléatoires pendant le sommeil, sans avoir de signification particulière. Selon cette perspective, les rêves pourraient être simplement le résultat de processus cérébraux et neurologiques.De plus, des études neuroscientifiques ont montré que certaines zones du cerveau impliquées dans le traitement de l’information sensorielle et dans la mémoire sont activées pendant le sommeil paradoxal, ce qui renforce l’idée que les rêves pourraient être le résultat d’une activité purement neuronale spontanée.
+  </div>
+</div>
+
+
+<div class="cadre-texte">
+  <div class="contenu">Cette théorie soutient donc l’idée que les rêves pourraient être générés au niveau neurologique, elle ne répond pas nécessairement à la question de savoir s’ils ont une signification ou une fonction particulière.
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <div class="contact-links">
+    <a href="mailto:nnil.projetinter@gmail.com">Email</a>
+    <a href="http://www.youtube.com/@Nnil-q3i" target="_blank">Youtube</a>
+  </div>
+  <p>© 2025 - Projet sur les rêves</p>
+</footer>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
