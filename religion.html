@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NNIL Projet Inter - Religion</title>
+  <link rel="stylesheet" href="main5.css" />
+  <style>
+
+
+  </style>
+</head>
+
+<body class="dark-theme">
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <img src="imageslogo-nnil.png" alt="Logo NNIL" />
+      </div>
+    </div>
+
+    <div class="navbar-right">
+      <nav>
+        <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="analyse.html">Analyse</a></li>
+        <li><a href="reves.html">Rêves récurrents
+        <li><a href="philosophes.html">Philosophie</a></li>
+        <li><a href="religion.html">Religion</a></li>
+        <li><a href="biblio.html">Bibliographie</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
+        <!-- Soleil visible par défaut -->
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="orange" stroke-width="2" viewBox="0 0 24 24" width="40" height="40">
+          <circle cx="12" cy="12" r="5" fill="orange"/>
+          <g stroke="orange" stroke-linecap="round" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="4"/>
+            <line x1="12" y1="20" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="4" y2="12"/>
+            <line x1="20" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+          </g>
+        </svg>
+
+
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="gold" stroke-width="2" viewBox="0 0 24 24" width="40" height="40" style="display: none;">
+          <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 0012 21a9 9 0 009-8.21z" fill="gold" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="hero">
+    <h1> Rêver : signe du divin ou fruit de l’esprit ?</h1>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const iconSun = document.getElementById('icon-sun');
+    const iconMoon = document.getElementById('icon-moon');
+
+    toggleButton.addEventListener('click', () => {
+      if (body.classList.contains('light-theme')) {
+        // Passer au thème sombre
+        body.classList.replace('light-theme', 'dark-theme');
+        iconSun.style.display = 'none';
+        iconMoon.style.display = 'block';
+        toggleButton.setAttribute('aria-label', 'Passer au thème clair');
+      } else {
+        // Passer au thème clair
+        body.classList.replace('dark-theme', 'light-theme');
+        iconSun.style.display = 'block';
+        iconMoon.style.display = 'none';
+        toggleButton.setAttribute('aria-label', 'Passer au thème sombre');
+      }
+    });
+  </script>
+  </main>
+<div class="cadre-texte video-container">
+  <iframe width="580" height="315" src="https://www.youtube.com/embed/J9cdhBUjtq8" 
+          title="Vidéo YouTube" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<div class="cadre-texte">
+  <div class="contenu">Depuis la nuit des temps, les rêves fascinent. Tantôt perçus comme des messages divins, tantôt comme de simples échos de l’inconscient, ils occupent une place particulière dans de nombreuses traditions religieuses. Qu’ils soient prophétiques, symboliques ou mystiques, les rêves sont souvent interprétés comme des ponts entre l’humain et le sacré. Ce reportage vous emmène à la rencontre de ceux pour qui le rêve reste un langage spirituel, une révélation, un mystère.
+</div>
+</div>
+
+<div class="cadre-texte">
+  <div class="contenu">Judaïsme : 
+Dans la Bible hébraïque, les rêves jouent un rôle fondamental en tant que vecteurs de révélation divine. Dieu s’adresse aux hommes à travers eux, comme en témoignent l’échelle de Jacob (Genèse 28), les rêves prophétiques de Joseph et Daniel, ou encore ceux de Pharaon et de Balaam. Ces songes orientent les destins individuels et collectifs, marquant une forme de communication directe entre le divin et l’humain. Un exemple célèbre est le rêve de Joseph, fils de Jacob, raconté dans la Genèse (chapitres 37 et 40-41). Joseph rêve qu’il dominera sa famille, ce qui provoque la jalousie de ses frères. Plus tard, en Égypte, il interprète avec justesse les rêves de Pharaon, qui annoncent sept années d’abondance suivies de sept années de famine. Grâce à cette interprétation, Joseph sauve l’Égypte de la crise, montrant ainsi comment un rêve divin peut influencer le destin d’un peuple entier.
+</div>
+</div>
+
+<div class="cadre-texte">
+  <div class="contenu">Christianisme : 
+La Bible déclare au sujet du ministère prophétique dans l'Ancien Testament : 
+Nombres 12 : 6 (il faut dire et écrire  : Écrit Nombres chapitre 12 verset 6)
+“Et il dit : Ecoutez bien mes paroles ! Lorsqu'il y aura parmi vous un prophète, c'est dans une vision que moi, l'Eternel, je me révélerai à lui, c'est dans un songe que je lui parlerai”.
+Le Nouveau Testament fait moins référence aux rêves que l’Ancien, mais conserve un rôle spirituel : ainsi, les Mages sont avertis en rêve, et Joseph (époux de Marie) reçoit des messages divins via les songes.
+L’Église a cependant mis en garde contre la divination par les rêves, considérée comme potentiellement liée au Mal. Par exemple, la bulle d’Innocent VIII, 1484 → Elle autorise officiellement les inquisiteurs allemands Heinrich Kramer et Jacob Sprenger à poursuivre les personnes soupçonnées de sorcellerie.Cette bulle servira de préface à leur célèbre traité Malleus Maleficarum (Le Marteau des Sorcières), publié en 1487. Même si la bulle ne parle pas explicitement des rêves, elle s’inscrit dans un climat où les rêves étaient parfois perçus comme des signes démoniaques, surtout ceux jugés étranges, érotiques ou violents.
+On croyait que le diable pouvait influencer les songes, en particulier ceux des femmes, perçues comme plus vulnérables à la tentation et à l’illusion. Les rêves étaient donc suspects lorsqu’ils semblaient s’écarter de la morale chrétienne ou évoquer des pratiques interdites. 
+</div>
+</div>
+
+<div class="cadre-texte">
+  <div class="contenu">Islam : 
+Les rêves ont toujours occupé une place importante dans la spiritualité islamique. Ils ne sont pas simplement des phénomènes aléatoires ou insignifiants, mais des messages divins, des révélations et des signes que Dieu envoie pour guider, avertir ou éclairer.
+Il existe des méthodes spécifiques pour comprendre les rêves
+Dans les hadîths, le Prophète distingue trois types de rêves y compris les rêves véridiques et les rêves trompeurs, et chaque type a sa propre interprétation. 
+Des exemples de rêves dans la vie des prophètes sont souvent utilisés pour illustrer leur signification. Le Coran consacre une sourate (Yusuf, XII) aux rêves prophétiques : Joseph interprète non seulement son propre rêve, mais aussi ceux de ses compagnons et du roi d’Égypte. 
+Il est recommandé de prier et de chercher des conseils auprès de savants pour interpréter les rêves selon les principes islamiques. 
+Les rêves peuvent également jouer un rôle dans l'éducation spirituelle et personnelle des croyants. 
+Ces éléments montrent l'importance des rêves dans la culture islamique et leur interprétation.
+L’un des plus grands compilateurs d’onirocritique (interprétation des rêves) musulmane est Ibn Sīrīn (VIIe–VIIIe siècle), dont l’œuvre reste une référence. 
+</div>
+</div>
+
+
+<div class="cadre-texte" >
+  <div class="contenu" style="white-space:pre-line; font-family:Arial, sans-serif">Bouddhisme : Dans le bouddhisme, les rêves sont bien plus que de simples expériences nocturnes : ils sont des outils puissants pour explorer l’esprit et comprendre la nature illusoire de la réalité. Les rêves révèlent que tout ce que nous percevons,  y compris la vie éveillée, est transitoire et construit par l’esprit, un concept central dans la religion bouddhiste. 
+Dans le bouddhisme, il y a des manières de reconnaître que l’on rêve, dans le but de rester lucide et maître de ses actions, même dans les rêves. Par exemple, on peut s'entraîner pendant la journée à voir le monde comme un rêve, puis on s’endort avec l’intention claire de rester conscient dans ses rêves .Il y a aussi des manières de tester la nature illusoire du rêve, par exemple en traversant un mur, en transformant un objet ou en affrontant un élément naturel (le feu ou l’eau sont les plus courants) 
+Cette pratique a notamment des objectifs transcendantaux : d’une part, transcender ses peurs et contrôler son mental. Le rêve devient un laboratoire spirituel.D’autre part, le rêve fait office de préparation à la mort : maîtriser ses rêves équivaut à rester conscient dans le passage vers l’après-vie. Enfin, maîtriser ses rêves permet de développer la pleine lucidité dans tous les états : le sommeil, le rêve, la veille et même au-delà. Cette idée a été formalisée par les maîtres bouddhistes comme Tilopa et Naropa dans le yoga du sommeil, un des Six Yogas de Naropa.  
+
+Chez le peuple amazonien achuar, les rêves ont une place significative dans le fonctionnement même de la société. La journée commence par un rituel matinal, chacun raconte ensuite ses rêves : ceux-ci sont interprétés collectivement, d’abord par les aînés, puis discutés par tous renforçant la cohésion sociale du groupe. Les rêves influencent directement les actions de la journée : chasse, guerre, guérison, jardinage… . Les Achuar croient que les rêves sont des messages des esprits ancestraux ou de l’Arutam (un esprit puissant souvent pris sous la forme d’un jaguar ou d’un boa) Un rêve « normal » prédit les événements : succès de chasse, insuccès, maladie ou conflit.
+Les rêves issus de visions sacrées sont plus fiables. Un rêve annonçant un malheur qui ne se réalise pas est interprété comme une réussite de la sagesse préventive, non comme un échec. Avant la chasse ou la guerre, on attend un rêve révélateur pour savoir s’il est opportun d’agir, et quelle stratégie adopter. En cas de signe négatif, des rituels comme le jeûne, les chants, et la consommation de plantes sacrées sont pratiqués pour modifier ou détourner le message onirique, influençant ainsi le futur possible. Dans la culture Achuar, les rêves ne sont donc pas seulement vécus : ils orientent, protègent, guérissent, structurent la société et renforcent la relation avec le monde spirituel et naturel.
+</div>
+</div>
+
+<div class="cadre-texte">  
+  <div class="contenu">Mythologie gréco-romaine :
+Enfin, dans la mythologie gréco-romaine, les rêves sont personnifiés par les Oneiroi. Leur nombre et leur filiation dépendent des versions : selon Hésiode dans sa Théogonie, ce sont les enfants de Nyx, la déesse primordiale de la nuit, qui les a conçus seule. Certains auteurs leur donnent Erèbe, le dieu primordial des Ténèbres, comme père. L’autre version la plus courante, mentionnée par Ovide dans ses Métamorphoses,  fait des Oneiroi les mille enfants du dieu du sommeil, Hypnos en grec, l’équivalent de Somnus en latin. Dans cette version, leur mère serait Pasithée, une des Charites, plus connues sous leur nom romain des Grâces. Le nombre des Oneiroi est donc incertain, mais quatre sont bien connus dans les textes : Morphée, Phobétor appelé Icélos par les dieux, Epialès et Phantasos. Morphée est sans aucun doute le plus connu aujourd’hui : il est le dieu des rêves et se distingue par sa capacité à prendre n’importe quelle forme humaine et à apparaître dans n’importe quel rêve. On retrouve ces capacités dans le mythe de Ceyx et Alcyone : Ceyx meurt en mer mais Alcyone continue de prier pour qu’il revienne auprès d’elle; Morphée lui apparaît donc en rêve sous les traits de Ceyx pour l’informer de la mort de celui-ci. Désespérée, Alcyone se jette dans la mer dans l’espoir de le rejoindre, mais les dieux les transforment tous les deux en martin-pêcheurs. Phobétor, appelé comme ça par les humains et Icélos par les dieux, est lui l’esprit des cauchemars, qui prend souvent la forme d’un animal ou d’un monstre. Le mot phobie vient de son nom. Epialès est lui aussi un esprit des cauchemars et il est connu sous le nom Melas Oneiros, ce qui signifie rêves noirs. Enfin, Phantasos est le dieu des rêves ayant des sujets inanimés : il apparaissait dans les rêves sous forme d’objets inanimés qui,par leur symbolique, transmettaient des messages. Ces rêves avaient souvent pour but d’embrouiller les gens, c’est pourquoi il est aussi connu comme le dieu des rêves irréels. Le mot fantaisie provient d’ailleurs de son nom.
+</div>
+</div>
+
+</div>
+
+<footer>
+  <div class="contact-links">
+    <a href="mailto:nnil.projetinter@gmail.com">Email</a>
+    <a href="http://www.youtube.com/@Nnil-q3i" target="_blank">Youtube</a>
+  </div>
+  <p>© 2025 - Projet sur les rêves</p>
+</footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
